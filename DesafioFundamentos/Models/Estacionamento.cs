@@ -19,7 +19,7 @@ namespace DesafioFundamentos.Models
             Console.Write("Digite a placa do veículo para estacionar: ");
             string cadastrarVeiculo = Console.ReadLine(); 
             
-            // Verifica se o se a placa já está na lista de veiculos
+            // Verifica se a placa já está na lista de veiculos
             if (veiculos.Any(veiculo => veiculo.ToUpper() == cadastrarVeiculo.ToUpper())){
                 Console.WriteLine("Essa placa já foi cadastrada, não é possivel cadastrar novamente, verifique se você digitou corretamente");
             }else{
